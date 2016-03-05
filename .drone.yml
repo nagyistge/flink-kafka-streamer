@@ -1,0 +1,14 @@
+build:
+  image: zavalit/flink
+  commands: 
+     - mvn clean package
+
+publish:
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PSW
+    email: $$DOCKER_EMAIL
+    repo: zavalit/flink-kafka-streamer
+    when:
+      repo: zavalit/flink-kafka-streamer
+      branch: master
