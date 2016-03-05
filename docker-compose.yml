@@ -1,0 +1,8 @@
+flink-kafka-streamer:
+    image: zavalit/flink-kafka-streamer
+    environment:
+      - KAFKA_HOST=$KAFKA_HOST
+      - KAFKA_TOPICS=$KAFKA_TOPICS
+    net: "host"
+    mem_limit: 2000000000
+    memswap_limit: 2000000000

@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "i'm HERE°!!!"
+$FLINK_BIN/start-local.sh && $FLINK_BIN/flink run $PROGRAMM_JAR $KAFKA_HOST $KAFKA_TOPICS
