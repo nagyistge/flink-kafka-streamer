@@ -1,5 +1,5 @@
 build:
-  image: zavalit/flink
+  image: zavalit/flink:1.1-SNAPSHOT
   commands: 
      - mvn clean package
 
